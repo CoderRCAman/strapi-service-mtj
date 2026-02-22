@@ -15,8 +15,8 @@ const config =
         },
       },
       settings: {
-        defaultFrom: 'no-reply@example.com',
-        defaultReplyTo: 'support@example.com',
+        defaultFrom: env('DEFAULT_EMAIL_FROM'),
+        defaultReplyTo: env('DEFAULT_EMAIL_TO'),
       },
     },
   },
